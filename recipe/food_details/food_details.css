@@ -1,0 +1,252 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+button, input[type="submit"] {
+    cursor: pointer;
+}
+
+.poppins-thin { font-family: "Poppins", sans-serif; font-weight: 100; }
+.poppins-extralight { font-family: "Poppins", sans-serif; font-weight: 200; }
+.poppins-light { font-family: "Poppins", sans-serif; font-weight: 300; }
+.poppins-regular { font-family: "Poppins", sans-serif; font-weight: 400; }
+.poppins-medium { font-family: "Poppins", sans-serif; font-weight: 500; }
+.poppins-semibold { font-family: "Poppins", sans-serif; font-weight: 600; }
+.poppins-bold { font-family: "Poppins", sans-serif; font-weight: 700; }
+.poppins-extrabold { font-family: "Poppins", sans-serif; font-weight: 800; }
+.poppins-black { font-family: "Poppins", sans-serif; font-weight: 900; }
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFF5EC;
+}
+
+.container {
+    margin: 0 150px;
+}
+
+.recipe-card {
+    padding: 20px;
+}
+
+.recipe-header {
+    text-align: center;
+    color: #1a237e;
+    padding: 20px;
+    background-color: #bbdefb;
+    border-radius: 12px;
+}
+
+.recipe-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.author {
+    color: #5c6bc0;
+    font-size: 14px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    color: #ffca28;
+}
+
+.review {
+    color: #5c6bc0;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.summary-item {
+    text-align: center;
+    color: #1a237e;
+}
+
+.summary-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+.recipe-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.recipe-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-section, .instructions-section, .nutrition-section, .nutrition-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #37474f;
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.nutrition-summary {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nutrition-item {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f2fd;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #1a237e;
+    text-align: center;
+}
+
+.nutrition-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin: 0 50px;
+    }
+    .recipe-title {
+        font-size: 26px;
+    }
+    .summary {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px;
+    }
+    .recipe-title {
+        font-size: 24px;
+    }
+    .summary-item {
+        font-size: 16px;
+    }
+    .summary-value {
+        font-size: 20px;
+    }
+    .rating {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0 10px;
+    }
+    .recipe-header {
+        padding: 15px;
+    }
+    .recipe-title {
+        font-size: 20px;
+    }
+    .summary {
+        flex-direction: column;
+    }
+    .summary-item, .summary-value {
+        font-size: 16px;
+    }
+    .nutrition-item {
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+    }
+    .nutrition-value {
+        font-size: 16px;
+    }
+    .ingredients-section, .instructions-section, .nutrition-section, .nutrition-info {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
